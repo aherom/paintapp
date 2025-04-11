@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <canvas id="canvas" width="1326" height="500"></canvas>
+    <div class="draxingBox">
+        <input type="color" id="color">
+        <div class="size-controls">
+            <label for="size-slider">Size:</label>
+            <input type="range" id="size-slider" min="1" max="50" value="1">
+            <span id="size-value">1</span>
+        </div>
+        <div class="drawing-mode">
+            <button id="brush-btn" class="active">Brush</button>
+            <button id="eraser-btn">Eraser</button>
+        </div>
+        <button id="clear">X</button>
+        <input type="color" id="canvasbgcolor" value="#ffffff">
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="download">Download JPEG</button>
+        <button id="save-local">Save Local</button>
+        <button id="get-local">Get Local</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="localStorageHandler.js"></script>
+</body>
+</html>

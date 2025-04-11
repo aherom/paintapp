@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+}
+
+canvas {
+    box-shadow: 3px 3px 10px gray;
+    margin-top: 15px;
+    cursor: crosshair;
+    border: 1px solid #ccc;
+    background-color: white;
+    max-width: 95%; 
+    height: auto;     
+    max-height: 90vh;   
+}
+
+.draxingBox {
+    background-color: #746a6a;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    /* margin-bottom: 20px; */
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 1.5rem;
+}
+
+.size-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ccc;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.drawing-mode {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease;
+    margin-right: 2rem;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#eraser-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#eraser-btn:hover {
+    background-color: #d32f2f;
+}
+
+#brush-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#brush-btn:hover {
+    background-color: #388e3c;
+}
+
+.active {
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#download {
+    background-color: #007bff;
+    color: white;
+}
+
+#download:hover {
+    background-color: #0056b3;
+}
+
+#color,
+#canvasbgcolor {
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  
+}
+
+#clear {
+    background-color: #ffc107;
+}
+
+#clear:hover {
+    background-color: #e0ab00;
+}
+
+#undo,
+#redo,
+#save-local,
+#get-local {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#undo:hover,
+#redo:hover,
+#save-local:hover,
+#get-local:hover {
+    background-color: #545b62;
+}
+
+#color {
+    width: 40px;
+}
+
+#canvasbgcolor{
+    width: 40px;
+}
+
+.draxingBox button {
+    color: white;
+    background-color: #555555;
+    border-radius: 0.5rem;
+    padding: 8px 10px;
+}
+
+.draxingBox button:hover {
+    background-color: #777777;
+}
+
+.draxingBox button:active {
+    background-color: #333333;
+}
+
+#undo, #redo, #download, #save-local, #get-local {
+    font-size: 0; 
+    padding: 8px; 
+    line-height: 0;
+}
+
+#undo::before {
+    content: "↶"; 
+    font-size: 2rem; 
+    display: block;
+}
+#redo::before {
+    content: "↷";
+    font-size: 2rem;
+    display: block;
+}
+#download::before{
+    content: "↓";
+    font-size: 2rem;
+    display: block;
+}
+#save-local::before{
+    content: "💾";
+    font-size: 2rem;
+    display: block;
+}
+
+#get-local::before{
+    content: "📤";
+    font-size: 2rem;
+    display: block;
+}
+
